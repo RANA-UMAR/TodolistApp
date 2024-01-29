@@ -1,12 +1,12 @@
 import React from 'react'
-import Main from './Todo/Main'
-// import Todolist from './Todolist'
+import Main from './TodoWithUseReducer/Main'
+// import Todolist from './SimpleTodo/Todolist'
 
 const App = () => {
   return (
     <div>
-      {/* <Todolist/> */}
-      <Main/>
+    {/* <Todolist/> */}
+    <Main/>
     </div>
   )
 }

@@ -7,10 +7,10 @@ import reducer from './reducer';
 
 const initialState = [];
 
-// const init= (initialState)=>{
-// const result = [...initialState,{id:1,name:"shopping"}]
-// return result;
-// }
+const init= (initialState)=>{
+const result = [...initialState,{id:1,name:"shopping"}]
+return result;
+}
 
 const To_Do_Actions ={
   ADD_TASK : "Add_task",
@@ -20,7 +20,7 @@ const To_Do_Actions ={
 }
 
 const Main = () => {
-  const [todo, dispatch] = useReducer(reducer, initialState);
+  const [todo, dispatch] = useReducer(reducer, initialState,init);
   const [input, setInput] = useState('');
   const [isEdit, setIsEdit] = useState(false);
   const [editIndex, setEditIndex] = useState(null);
